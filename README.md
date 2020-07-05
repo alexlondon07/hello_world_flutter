@@ -181,6 +181,32 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 ``` 
 
+## Creando un proyecto base
+
+teniendo en cuenta que el proyecto es creado de manera agil por la herramienta que estemos usando hablaremos unicamente de una estructura posterior a la creacion del proyecto, por ende estos serian los pasos a seguir:
+
+1. Crear la siguiente estructura de carpetas utilizando:
+
+``` shell
+mkdir -p assets/images;
+mkdir -p lib/pages;
+mkdir -p lib/models;
+mkdir -p lib/utils;
+mkdir -p lib/widgets;
+mkdir -p lib/services
+```
+
+Observamos como deberia quedar el proyecto luego de crear las carpetas necesarias:
+
+![folder_structure](/assets/images/folder_structure.png)
+
+* ``assets/images`` : Es la carpeta donde almacenaremos nuestros recursos estaticos como las imagenes o las fuentes.
+* ``lib/pages`` : Se utiliza para manejar las interfaces(UI) del proyecto.
+* ``lib/models``: Contiene las clases para los datos, como informacion del cliente y articulos de almacen.
+* ``lib/utils``: Maneja las clases encargadas de ayudar en la logica como los calculos de la fecha o la conversion de data
+* ``lib/widgets``: Contiene todo los widgets separados en archivos para ser reusados.
+* ``lib/services``: Este sera el folder que contendra los servicios encargados de pedir la data a servicios externos o expuestos en internet.
+
 [repo_flutter]:https://github.com/flutter/flutter
 [plugins_flutter]:https://pub.dartlang.org/flutter
 [shared_preferences]:https://pub.dartlang.org/flutter
